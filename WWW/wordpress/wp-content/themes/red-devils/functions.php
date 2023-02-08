@@ -1,4 +1,4 @@
-<?php add_theme_support('post_thumbnails');?>
+<?php add_theme_support('post_thumbnail');?>
 
 <?php add_theme_support( 'custom-logo',[
     		'height'               => 165,

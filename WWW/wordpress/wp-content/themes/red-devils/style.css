@@ -193,9 +193,15 @@ footer {
 }
 /* galeria*/
 
-/* 
-responsive
- */
+/* wpisy */
+.wpis-p {
+	text-indent: 2rem;
+	text-align: justify;
+	text-transform: uppercase;
+}
+
+/*responsive */
+
 @media only screen and (min-width: 1080px) {
 	.navbar form {
 		width: 15vw;
