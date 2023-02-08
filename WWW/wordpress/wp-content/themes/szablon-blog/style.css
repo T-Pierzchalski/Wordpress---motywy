@@ -1,0 +1,58 @@
+/*
+Theme Name: Szablon na bloga
+Description: Szablon graficzny strony internetowej (bloga)
+Author: Tomasz Pierzchalski
+Author E-mail: t.pierzchalski0@gmail.com
+Version: 0.0
+Tags: blog, szablon
+Requires at least: 5.0
+Tested up to: 6.1.1
+License: GNU General Public License v3 or later
+License URL: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+:root {
+	font-size: 16px;
+}
+* {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: black;
+}
+.container {
+	background-color: hsl(122, 100%, 95%);
+	margin: 2em 12em;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+div.blog-thumbnail {
+	width: 25%;
+	height: max-content;
+	padding: 2em 2em;
+	background-color: aqua;
+	margin: 2em 1em;
+}
+.blog-thumbnail h2 {
+	margin-bottom: 1em;
+	font-size: 2rem;
+}
+.blog-thumbnail p {
+	text-indent: 2em;
+	font-size: 1rem;
+}
+.menu {
+	top: 0;
+	float: left;
+	background-color: hsl(122, 100%, 20%);
+	position: sticky;
+}
+.menu ul {
+	float: left;
+}
+.footer {
+	background-color: hsl(122, 100%, 20%);
+}

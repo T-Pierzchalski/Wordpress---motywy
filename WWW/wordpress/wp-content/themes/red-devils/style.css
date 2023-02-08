@@ -1,0 +1,286 @@
+/* 
+Theme name: szablon-red-devils
+Description: Szablon strony fanów manchesteru united
+Author: Tomasz Pierzchalski
+Author E-mail: t.pierzchalski0@gmail.com
+Version: 0.1
+Tags: blog, szablon
+Requires at least: 5.0
+Tested up to: 6.1.1
+License: GNU General Public License v3 or later
+License URL: http://www.gnu.org/licenses/gpl-3.0.html
+Php verson: 7.3.16
+*/
+:root {
+	font-size: 16px;
+}
+body {
+	background-color: hsl(0, 100%, 20%);
+	background-image: URL("images/backgrounds/old-traford.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 200px;
+}
+/* nawigacja -pasek góra */
+.nav:first-child {
+	background-color: hsl(20, 100%, 50%);
+	width: max-content;
+	float: right;
+}
+.nav:first-child a:hover {
+	background-color: hsl(0, 100%, 20%);
+	color: hsl(0, 100%, 35%);
+}
+.nav a {
+	color: hsl(0, 0%, 90%);
+	border-radius: 10%;
+}
+/* nawigacja pasek góra - pozycja 2 */
+.navbar {
+	float: right;
+	justify-content: space-between;
+	background-color: hsl(0, 100%, 35%);
+	color: white;
+}
+.navbar a {
+	color: hsl(0, 0%, 90%);
+	display: block;
+}
+
+.navbar a:hover {
+	background-color: hsl(0, 100%, 20%);
+	color: hsl(0, 100%, 35%);
+	text-transform: uppercase;
+}
+.navbar a:active {
+	color: hsl(250, 75%, 45%);
+	background-color: hsl(120, 100%, 35%);
+}
+.navbar form {
+	border: none;
+}
+
+.navbar form input,
+.navbar form button {
+	border: 2px solid hsl(0, 100%, 20%);
+}
+.navbar .btn {
+	background-color: hsl(190, 100%, 45%);
+	color: hsl(0, 100%, 35%);
+	width: fit-content;
+	float: right;
+	margin-right: 4.5rem;
+	margin-top: 0.5rem;
+}
+.navbar li,
+.navbar form input .navbar form button,
+.navbar li > a,
+.navbar li > button > a {
+	margin-inline: 3%;
+	border-radius: 10%;
+}
+.navbar form input:focus,
+.navbar form button:focus {
+	transform: scale(1.2);
+	transition: transform 1s ease-in-out;
+}
+.navbar form button:hover {
+	transform: scale(1.2);
+	transition: transform 1s ease-in-out;
+}
+/* 
+Logo 
+*/
+.logo {
+	width: max-content;
+	height: max-content;
+	text-align: center;
+	background-color: hsl(0, 100%, 35%);
+	margin: 0;
+	border-radius: 5%;
+	color: hsl(0, 0%, 90%);
+	display: block;
+}
+.logo:hover {
+	background-color: hsl(0, 100%, 20%);
+	color: hsl(0, 0%, 90%);
+	transform: scale(0.9);
+	text-transform: uppercase;
+	transition: transform 1s ease-in-out;
+}
+/* header-nav */
+.header-nav {
+	max-height: fit-content;
+	background-color: hsl(0, 100%, 20%, 0.4);
+	z-index: -2;
+	padding-bottom: 1%;
+	padding-inline: 0;
+	border-bottom-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+}
+
+.container {
+	background-color: hsl(25, 76%, 15%, 0.5);
+	color: hsl(0, 0%, 90%);
+	border-radius: 10%;
+	justify-content: center;
+	min-height: 80vh;
+}
+.blog-post {
+	text-indent: 3rem;
+	min-width: 20%;
+	max-width: 40%;
+	min-height: 20%;
+	background-color: hsl(25, 76%, 15%, 0.75);
+	margin: 1rem 1rem;
+}
+.drop:hover ul {
+	display: block;
+}
+
+.drop {
+	cursor: pointer;
+}
+.navbar li > ul {
+	background-color: hsl(0, 100%, 20%);
+}
+.navbar li > ul > a:hover {
+	background-color: hsl(0, 100%, 35%);
+	color: hsl(0, 100%, 20%);
+}
+button.border-0 {
+	border: none;
+	background-color: hsl(0, 100%, 35%);
+}
+button a {
+	text-decoration: none;
+}
+/* 
+footer 
+*/
+footer {
+	background-color: hsl(0, 100%, 35%);
+	width: 100%;
+	height: max-content;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding-left: 10%;
+	color: hsl(0, 0%, 90%);
+}
+/* main-site */
+.slajder {
+	background-color: hsl(25, 76%, 15%, 0.5);
+	color: hsl(0, 0%, 90%);
+	border-radius: 10%;
+	min-height: 80vh;
+}
+.s-img {
+	height: 80%;
+	width: 80%;
+	margin-inline: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.s-item {
+	height: 80%;
+	width: 100%;
+	padding: 1rem 1rem;
+}
+.caption {
+	background-color: hsl(0, 0%, 0%, 0.5);
+	border-radius: 20%;
+}
+/* galeria*/
+
+/* 
+responsive
+ */
+@media only screen and (min-width: 1080px) {
+	.navbar form {
+		width: 15vw;
+	}
+}
+@media only screen and (max-width: 1080px) {
+	.logo {
+		width: max-content;
+		height: max-content;
+		position: fixed;
+		top: 20px;
+		left: 0;
+		scale: 0.5;
+	}
+	.logo:hover {
+		transform: scale(2);
+		transition: transform 2s ease-in-out;
+	}
+
+	.nav:first-child {
+		display: none;
+	}
+
+	.navbar {
+		scale: 0.8;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-radius: 10%;
+	}
+	.navbar form input:focus .navbar {
+		transform: scale(2);
+		transition: transform 1s ease-in-out;
+	}
+	.header-nav {
+		margin-bottom: 20rem;
+		background: none;
+	}
+}
+@media only screen and (min-width: 1140px) {
+	.img-scale {
+		scale: 0.75;
+	}
+	.logo {
+		width: max-content;
+		height: fit-content;
+	}
+	.navbar form input {
+		scale: 0.9;
+		width: 9vw;
+	}
+	.navbar form input:focus {
+		transform: scale(1.2);
+		min-width: 9vw;
+	}
+	.navbar form button.btn {
+		scale: 0.9;
+		max-width: max-content;
+	}
+}
+@media only screen and (min-width: 1320px) {
+	.img-scale {
+		scale: 0.85;
+	}
+	.logo {
+		width: max-content;
+		height: fit-content;
+	}
+	.logo:hover {
+		transform: none;
+	}
+	.navbar form input {
+		width: 10vw;
+	}
+	.navbar form button {
+		width: 3vw;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.logo {
+		display: none;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.blog-post {
+		min-width: 100%;
+	}
+}
