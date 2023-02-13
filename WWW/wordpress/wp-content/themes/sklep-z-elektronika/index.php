@@ -1,5 +1,5 @@
 <?php get_header()?>
-<form class="sidebar my-4 sticky-top">
+<form class="sidebar my-4 sticky-top-xxl">
   <div class="form-group">
     <label for="categorySelect">Kategorie:</label>
     <select class="form-control" id="categorySelect">

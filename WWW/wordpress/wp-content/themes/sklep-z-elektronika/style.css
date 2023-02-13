@@ -27,8 +27,8 @@ body {
 	min-height: 2000px;
 }
 .logo {
-	height: 150px;
-	width: 175px;
+	min-height: 150px;
+	min-width: 175px;
 	background-color: black;
 	color: #fff;
 }
