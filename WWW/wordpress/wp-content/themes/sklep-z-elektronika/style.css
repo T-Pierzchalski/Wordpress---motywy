@@ -1,0 +1,93 @@
+/* 
+Theme Name: sklep-z-elektronika
+Description: Szablon do sklepu z elektroniką
+Author: Tomasz Pierzchalski
+Author E-mail: t.pierzchalski0@gmail.com
+Version: 0.1
+Tags: blog, szablon
+Requires at least: 5.0
+Tested up to: 6.1.1
+License: GNU General Public License v3 or later
+License URL: http://www.gnu.org/licenses/gpl-3.0.html
+Php verson: 7.3.16
+*/
+html,
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+:root {
+	font-size: 16px;
+}
+
+body {
+	background-color: #fff;
+	min-height: 2000px;
+}
+.logo {
+	height: 150px;
+	width: 175px;
+	background-color: black;
+	color: #fff;
+}
+
+.top-nav {
+	width: 50%;
+	margin-inline: 20rem;
+	background-color: blue;
+	padding-top: 1rem;
+	border-radius: 20%;
+}
+.top-nav > div > ul > li {
+	padding-inline: 1.5rem;
+	margin-inline: 1.5rem;
+	display: block;
+}
+
+form.form-inline {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-inline: 10rem;
+}
+.logowanie {
+	width: max-content;
+	background-color: blue;
+	border-bottom-left-radius: 20%;
+}
+.btn-close {
+	float: right;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 0.5;
+}
+
+.btn-close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.75;
+}
+/* side-bar */
+.sidebar {
+	background-color: #f2f2f2;
+	padding: 20px;
+	float: left;
+	clear: both;
+}
+/* container */
+.container {
+	min-height: 3000px;
+	min-width: 80%;
+	background-color: bisque;
+}
+
+footer {
+	bottom: 0;
+}
