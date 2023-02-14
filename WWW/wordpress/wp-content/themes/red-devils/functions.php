@@ -3,7 +3,7 @@
 <?php add_theme_support( 'custom-logo',[
     		'height'               => 165,
             'width'                => 180,
-            'flex-height'          => false,
+            'flex-height'          => true,
             'flex-width'           => false,
             'header-text'          => ['site-title', 'site-description'],
         ]);?>

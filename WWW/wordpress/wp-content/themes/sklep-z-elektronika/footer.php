@@ -1,4 +1,4 @@
-<footer>
+<footer class="fixed-bottom w-100 px-5">
 &copy; Tomasz Pierzchalski, 2023, wersja 1.0, motyw własny
 
 </footer>
